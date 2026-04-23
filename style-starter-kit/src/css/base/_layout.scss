@@ -1,0 +1,22 @@
+.q-layout,
+.q-page-container,
+.q-page {
+  background: var(--app-bg);
+  color: var(--text-color);
+}
+
+.q-header {
+  background: var(--surface-bg);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.q-drawer {
+  background: var(--surface-bg);
+  color: var(--text-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.q-page {
+  padding: 1rem;
+}

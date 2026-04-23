@@ -1,0 +1,25 @@
+body {
+  font-family: $typography-font-family;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  background: var(--app-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+}

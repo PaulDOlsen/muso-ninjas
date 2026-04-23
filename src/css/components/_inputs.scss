@@ -1,0 +1,34 @@
+.q-field__control {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: $generic-border-radius;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.q-field--filled .q-field__control {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: $generic-border-radius;
+}
+
+.q-field--focused .q-field__control,
+.q-field--highlighted .q-field__control {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba($primary, 0.15);
+}
+
+.q-field__native,
+.q-field__input {
+  color: var(--text-color);
+}
+
+.q-field__label {
+  color: var(--text-muted);
+}
+
+.q-field--filled .q-field__label,
+.q-field--filled .q-field__control {
+  padding-left: 6px;
+}

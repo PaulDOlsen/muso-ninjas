@@ -1,0 +1,37 @@
+// ─── Color Tokens ─────────────────────────────────────────────────────────────
+// Core palette values are set per-theme in themes/_light.scss and
+// themes/_dark.scss.  The variables below provide the static, theme-agnostic
+// aliases used across components.
+//
+// Theme-specific overrides (already defined):
+//   --primary-color   → teal-700 (light) / teal-600 (dark)
+//   --text-color      → slate-900 (light) / pale-teal (dark)
+//   --text-muted      → slate-500 (light) / muted-teal (dark)
+//   --border-color    → slate-300 (light) / dark-teal (dark)
+//   --input-bg        → white (light) / dark-teal (dark)
+//
+// Static design-system colour tokens live here so they can be imported
+// independently of the theme files.
+
+:root {
+  // Brand
+  --color-primary: #0d9488; // $primary
+  --color-primary-hover: #0f766e;
+  --color-secondary: #0891b2; // $secondary
+  --color-accent: #14b8a6; // $accent
+
+  // Semantic states
+  --color-positive: #16a34a; // $positive
+  --color-negative: #dc2626; // $negative
+  --color-warning: #f59e0b; // $warning
+  --color-info: #0ea5e9; // $info
+
+  // Neutral surface palette (light defaults; overridden in dark theme)
+  --app-bg: #f8fafc;
+  --surface-bg: #ffffff;
+  --surface-muted: #f1f5f9;
+
+  // Semantic aliases expected by components
+  --primary-color: var(--color-primary);
+  --secondary-color: var(--color-secondary);
+}

@@ -1,0 +1,12 @@
+// ─── Border Radius Tokens ─────────────────────────────────────────────────────
+// $generic-border-radius (10px) is the Quasar SCSS variable used by the
+// framework itself.  The CSS custom properties below expose the full scale
+// for use in component styles.
+
+:root {
+  --radius-sm: 4px;
+  --radius-md: #{$generic-border-radius}; // 10px — matches Quasar default
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px; // pill / fully-rounded
+}

@@ -1,0 +1,18 @@
+.q-table {
+  background: var(--surface-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: $generic-border-radius;
+  overflow: hidden;
+}
+
+.q-table thead tr,
+.q-table tbody tr,
+.q-table th,
+.q-table td {
+  border-color: var(--border-color);
+}
+
+.q-table thead tr {
+  background: var(--surface-muted);
+}

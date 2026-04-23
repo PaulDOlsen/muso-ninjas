@@ -3,25 +3,14 @@
 @import './base/reset';
 @import './base/typography';
 @import './base/layout';
-@import './base/pages';
-@import './base/form-flow';
-@import './base/navbar';
 
 @import './themes/light';
 @import './themes/dark';
 
-@import './components/buttons';
-@import './components/inputs';
-@import './components/cards';
 @import './components/patterns';
-@import './components/tables';
-@import './components/dialogs';
-@import './components/tooltips';
-@import './components/forms';
 
 @import './tokens/colors';
 @import './tokens/spacing';
 @import './tokens/typography';
 @import './tokens/radius';
 @import './tokens/shadows';
-@import './tokens/zindex';

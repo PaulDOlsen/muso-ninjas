@@ -1,0 +1,124 @@
+/* Reusable app style primitives: portable across pages and projects. */
+
+.app-stack {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.app-stack--sm {
+  gap: var(--space-3);
+}
+
+.app-stack--md {
+  gap: var(--space-4);
+}
+
+.app-stack--lg {
+  gap: var(--space-6);
+}
+
+.app-page-section {
+  width: min(100%, 960px);
+  margin: 0 auto;
+}
+
+.app-page-title {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.app-page-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.app-form-heading {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.app-form-subheading {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.app-card {
+  border-radius: var(--radius-md);
+}
+
+.app-card--interactive {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.app-card--interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.app-card__content {
+  padding: var(--space-5) !important;
+}
+
+.app-list-row {
+  gap: var(--space-5);
+}
+
+.app-media-thumb {
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.app-media-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-content-grow {
+  min-width: 0;
+}
+
+.app-item-title {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.app-item-meta {
+  margin: var(--space-2) 0 0;
+  color: var(--text-muted);
+}
+
+.app-item-tail {
+  margin-left: auto;
+}
+
+.app-form-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.app-feedback-error {
+  color: var(--color-negative);
+  font-size: 0.875rem;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 680px) {
+  .app-list-row {
+    flex-wrap: wrap;
+  }
+
+  .app-item-tail {
+    margin-left: 0;
+  }
+}

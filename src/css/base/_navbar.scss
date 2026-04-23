@@ -1,0 +1,50 @@
+/* Keep the header compact like a native Quasar toolbar */
+.navbar {
+  padding: 0 !important; /* Removes Quasar’s default header padding */
+  height: 56px; /* Standard QToolbar height */
+}
+
+/* Inner toolbar layout */
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  min-height: 56px; /* Ensures consistent height */
+  padding: 0 12px;
+}
+
+/* Logo sizing */
+.navbar-logo {
+  height: 40px; /* Scales down the ninja icon */
+  cursor: pointer;
+}
+
+/* Title styling */
+.navbar-title {
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-title a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Uses toolbar text color */
+}
+
+/* Push links to the right */
+.navbar-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Optional: make router-links behave like inline-blocks */
+.navbar-links a {
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.q-card {
+  background: var(--surface-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: $generic-border-radius;
+  box-shadow: 0 8px 24px $shadow-color;
+}
+
+.q-card__section--vert {
+  padding: 1rem 1.25rem;
+}
