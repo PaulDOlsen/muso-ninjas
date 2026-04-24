@@ -4,14 +4,28 @@ import { getFirestore } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 import { VueFire, VueFireAuth } from 'vuefire'
 
-// Your web app's Firebase configuration
+const requiredEnvKeys = [
+  'VITE_FIREBASE_API_KEY',
+  'VITE_FIREBASE_AUTH_DOMAIN',
+  'VITE_FIREBASE_PROJECT_ID',
+  'VITE_FIREBASE_STORAGE_BUCKET',
+  'VITE_FIREBASE_MESSAGING_SENDER_ID',
+  'VITE_FIREBASE_APP_ID',
+]
+
+const missingEnvKeys = requiredEnvKeys.filter((key) => !import.meta.env[key])
+
+if (missingEnvKeys.length > 0) {
+  throw new Error(`Missing Firebase env vars: ${missingEnvKeys.join(', ')}`)
+}
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyByUYSnllLlrNGURqF0PMOFZW-gVJeiFoc',
-  authDomain: 'muso-ninjas-af99e.firebaseapp.com',
-  projectId: 'muso-ninjas-af99e',
-  storageBucket: 'muso-ninjas-af99e.firebasestorage.app',
-  messagingSenderId: '218339033898',
-  appId: '1:218339033898:web:a14046676a5d451319d453',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 }
 
 // Initialize Firebase
